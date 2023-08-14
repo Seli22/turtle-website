@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sacramento&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'montserrat',sans-serif;
+  }
+  
+  
+  
+  .hero{
+    width:100%;
+    height:100vh;
+    position: relative;
+    display:flex;
+    
+    
+  }
+/*navigationbar*/
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 20px;
+  }
+  
+  
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul a {
+    font-family: 'montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.5s ease-in;
+  }
+  
+  nav ul a:hover,
+  nav ul li a.active {
+    border-bottom: 2px solid white;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color:white;
+    font-family: 'montserrat', sans-serif;
+    padding: 20px 20px;
+    font-size: 14px;
+    transition: 0.5s ease-in;
+  }
+  
+  .dropdown-content a {
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: 0.5s ease-in;
+  }
+  
+  .dropdown-content {
+    border-bottom: 2px solid white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .a {
+    background-color: black;
+  }
+  
+  /* Mobile Nav */
+  
+  .header nav .menu-btn {
+    color: #fff;
+    font-size: 25px;
+    display: none;
+  }
+  
+  .mob-nav {
+    display: none;
+  }
+  
+  #click {
+    display: none;
+  }
+  
+  /* End of navigation bar */
+  
+
+
+/*home page(H)*/
+picture img{
+  width:100%;
+  height:5%;
+}
+.containerH1{
+    display: flex;
+    flex-direction:row;
+    row-gap: 100px;
+    align-items: center;
+  
+  }
+  .imageH1{
+    
+    float:right;
+    text-align: right;
+    margin: 0px,0px,15px,15px;
+    padding: 100px;
+  }
+  .imageH1 img{
+    width:300px;
+    height:300px;
+  }
+  .textH1 h1{
+    font-size: 30;
+    font-family:  'montserrat',sans-serif;
+    font-style: bold;
+    padding-left: 100px;
+    float:left;
+  }
+  
+  .textH1 p{
+    
+    font-family: 'montserrat',sans-serif;
+    font-size: 17px;
+    padding:100px;
+    padding-top: 5%;
+    float:right;
+  }
+  
+  
+  
+  
+  .containerH2{
+    display: flex;
+    flex-direction:row;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .imageH2{
+    
+    float:right;
+    text-align: right;
+    margin: 0px,0px,15px,15px;
+    padding: 100px;
+  }
+  .imageH2 img{
+    width:300px;
+    height:300px;
+  }
+  
+  .textH2 h1{
+    font-size: 30;
+    font-family: 'montserrat',sans-serif;
+    font-style: bold;
+    padding-left: 100px;
+    float:left;
+  }
+  
+  .textH2 p{
+    font-family: 'montserrat',sans-serif;
+    font-size: 17px;
+    padding-left: 100px;
+    padding-top: 5%;
+    float:right;
+  }
+  
+  
+  
+  .containerH3{
+    display: flex;
+    flex-direction:row;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .imageH3{
+    
+    float:right;
+    text-align: right;
+    margin: 0px,0px,15px,15px;
+    padding: 100px;
+  }
+    .imageH3 img{
+    width:300px;
+    height:300px;
+  }
+  
+  
+  .textH3 h1{
+    font-size: 30;
+    font-family: 'montserrat',sans-serif;
+    font-style: bold;
+    padding-left: 100px;
+    float:left;
+  }
+  
+  .textH3 p{
+    font-family: 'montserrat',sans-serif;
+    font-size: 17px;
+    padding-left: 100px;
+    padding-top: 5%;
+    float:right;
+  }
+  /*Turtle categories(T)*/
+
+  .containerT1{
+    display: flex;
+    flex-direction:row;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+  
+  }
+  .imageT1{
+    
+    float:right;
+    text-align: right;
+    margin: 0px,0px,15px,15px;
+    padding: 100px;
+  }
+  .imageT1 img{
+    width: 300px;
+    height: 300px;
+  }
+  
+  .textT1 h1{
+    font-size: 30;
+    font-family: 'montserrat',sans-serif;
+    font-style: bold;
+    padding-left: 100px;
+    float:left;
+    color:white;
+  }
+  
+  .textT1 p{
+    font-family:'montserrat',sans-serif;
+    font-size: 17px;
+    padding-left: 100px;
+    padding-top: 5%;
+    float:right;
+    color: white;
+  }
+  
+  
+  
+  
+  .containerT2{
+    display: flex;
+    flex-direction:row;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+  
+  }
+  .imageT2{
+    
+    float:right;
+    text-align: right;
+    margin: 0px,0px,15px,15px;
+    padding: 100px;
+  }
+  
+  .textT2 h1{
+    font-size: 30;
+    font-family:'montserrat',sans-serif;
+    font-style: bold;
+    padding-left: 100px;
+    float:left;
+  }
+  
+  .textT2 p{
+    font-family:'montserrat',sans-serif;
+    font-size: 17px;
+    padding-left: 100px;
+    padding-top: 5%;
+    float:right;
+  }
+  
+  
+  
+  
+  .containerT3{
+    display: flex;
+    flex-direction:row;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    padding-right:5em;
+  
+  }
+  .imageT3{
+    
+    float:right;
+    text-align: right;
+    margin: 0px,0px,15px,15px;
+    padding: 100px;
+  }
+  .imageT3 img{
+    width: 300px;
+    height: 300px;
+  }
+  .textT3 h1{
+    font-size: 30;
+    font-family: 'montserrat',sans-serif;
+    font-style: bold;
+    padding-left: 100px;
+    float:left;
+    color: white;
+  }
+  
+  .textT3 p{
+    font-family: 'montserrat',sans-serif;
+    font-size: 17px;
+    padding-left: 100px;
+    padding-top: 5%;
+    float:right;
+    color: white;
+  }
+  
+  
+  
+  .containerT4{
+    display: flex;
+    flex-direction:row;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5em;
+    
+  
+  }
+  .imageT4{
+    
+    float:right;
+    text-align: right;
+    margin: 0px,0px,15px,15px;
+    padding: 100px;
+    
+  }
+  .imageT4 img{
+    width: 300px;
+    height: 300px;
+  }
+  .textT4 h1{
+    font-size: 30;
+    font-family:'montserrat',sans-serif;
+    font-style: bold;
+    padding-left: 100px;
+    float:left;
+  }
+  
+  .textT4 p{
+    font-family:'montserrat',sans-serif;
+    font-size: 17px;
+    padding-left: 100px;
+    padding-top: 5%;
+    float:right;
+    padding-right: 100px;
+    
+  }
+  
+  
+  
+  .containerT5{
+    display: flex;
+    flex-direction:row;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+  
+  }
+  .imageT5{
+    
+    float:right;
+    text-align: right;
+    margin: 0px,0px,15px,15px;
+    padding: 100px;
+  }
+  .imageT5 img{
+    width: 300px;
+    height: 300px;
+  }
+  .textT5 h1{
+    font-size: 30;
+    font-family: 'montserrat',sans-serif;;
+    font-style: bold;
+    padding-left: 100px;
+    float:left;
+    color: white;
+  }
+  
+  .textT5 p{
+    font-family: 'montserrat',sans-serif;
+    font-size: 17px;
+    padding-left: 100px;
+    padding-top: 5%;
+    float:right;
+    color: white;
+  }
+  .containerT6{
+    padding-left: 265px;
+  }
+  /*table*/
+  table{
+    
+      font-family: 'montserrat',sans-serif;
+      border-collapse: collapse;
+      width: 50%;
+      margin: 0;
+    }
+   
+    
+     td,th {
+      border: 1px solid white;
+      text-align: center;
+      padding-inline: 50px;
+    }
+    
+   tr:nth-child(even) {
+      background-color:gainsboro;
+     width:100%;
+     height: 60px;
+     padding: 10px;
+  }
+  /*Hikkaduwa Turtle Hatchery(K)*/
+
+  .containerK{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0px 20px;
+    padding-top: 100px;
+   }
+   .containerK .headingK{
+    width: 50%;
+    padding-bottom: 50px;
+  
+   }
+  
+   .containerK .headingK h3{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+    
+   } 
+  
+   .containerK .headingK h3 span{
+    font-weight: 100;
+  
+   }
+   .containerK .headingK p{
+    padding-top: 10px;
+    font-weight: 100;
+    font-size: 20px;
+   }
+  
+   .containerK .boxK{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  
+   }
+   .containerK .boxK .dreamK{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+   }
+   
+   .containerK .boxK .dreamK img{
+    
+    width:100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    
+   }
+  
+   .textK1{
+    
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+  }
+  
+  
+  .textK1 p{
+    font-family:'Montserrat', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 25px;
+    margin-right: 50px;
+  
+    
+  }
+  .textK1{
+    -ms-flex:1;
+    flex:1;
+  
+  
+  }
+  .containerK3{
+    display:flex;
+    padding-top: 20px;
+  }
+   
+  
+  .cardK {
+    flex:20%;
+    padding:5px;
+    
+  }
+  .cardK img{
+    width:50%;
+    border-radius: 5px;
+    height:300px;
+  }
+  .cardK button{
+   
+    display:inline-block;
+    background-color: black;
+    font-size:20px;
+    border:2px solid black;
+    padding: 14px 70px;
+    border-radius :50px;
+    margin-top:20px;
+  
+  }
+  .cardK a {
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: bold;
+      font-weight: 500px;
+      text-decoration: none;
+      align-items: justify;
+      color:white;
+      
+    }
+
+    /*Threats to turtles*/
+    .slider-containerS{
+        height:700px;
+        width:100%;
+        display: flex;
+        overflow: auto;
+        scroll-snap-type:x mandatory;
+    
+      }
+    
+      .slider-containerS .slideS{
+        scroll-snap-align:start;
+    
+      }
+    
+      .slider-containerS img{
+        width:1000px;
+        height:700px;
+        object-fit:cover;
+    
+      }
+    
+      .containerS{
+        background-color: black;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 100px;
+        
+      }
+    
+    
+      .containerS h1{
+        font-size: 25px;
+        color:white;
+        padding-top: 100px;
+        font-family:'montserrat',sans-serif;
+      }
+    
+      .containerS p{
+        color:white;
+        font-size:18px;
+        font-family: 'montserrat',sans-serif;
+    
+      }
+      h4{
+        font-size: 25px;
+        color:black;
+        padding-top: 100px;
+        font-family:'montserrat',sans-serif;
+        padding-left: 500px;
+      }
+    
+      .containerS3{
+        display:flex;
+        padding-top: 40px;
+       padding-left: 40px;
+       padding-bottom: 40px;
+      
+      }
+       
+      
+      .cardS {
+        flex:20%;
+        padding-right:20px;
+        
+      }
+      .cardS img{
+        width:80%;
+        border-radius: 5px;
+        height: 300px;
+      }
+      .cardS button{
+       
+        display:inline-block;
+        background-color: black;
+        font-size:15px;
+        border:2px solid black;
+        padding: 14px 70px;
+        border-radius :50px;
+        margin-top:20px;
+      
+      }
+      .cardS a {
+          font-size: 15px;
+          font-family: 'Montserrat', sans-serif;
+          font-style: bold;
+          font-weight: 500px;
+          text-decoration: none;
+          align-items: justify;
+          color:white;
+          
+        }
+
+
+        #button{
+          margin: auto;
+          background-color: black;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border-radius: 10px;
+          width: 150px;
+          text-decoration: none;
+          color: white;
+        }
+        /*Donate*/
+    
+        
+  
+  hr{
+    width: 50%;
+    margin-top: 10px;
+    margin: auto;
+  
+  }
+  
+  .containerS4{
+    display:flex;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+   
+  
+  .cardS4 {
+    flex:32.5%;
+    padding-right: 20px;
+    
+  }
+  .cardS4 img{
+    width:80%;
+    height: 300px;
+    border-radius: 5px;
+  }
+  .cardS4 button{
+   
+    display:inline-block;
+    background-color: black;
+    font-size:18px;
+    border:2px solid black;
+    padding: 14px 60px;
+    border-radius :50px;
+    margin-top:20px;
+  
+  }
+  .cardS4 a {
+    font-size: 15px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: bold;
+      font-weight: 500px;
+      text-decoration: none;
+      align-items: justify;
+      color:white;
+      
+    }
+
+/*Purchase and donate*/
+
+/*Collage*/
+.containerP{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0px 20px;
+  padding-top: 100px;
+ }
+ .containerP .headingP{
+  width: 50%;
+  padding-bottom: 50px;
+
+ }
+
+ .containerP .headingP h3{
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222; 
+  font-family: 'Montserrat', sans-serif;
+} 
+
+ .containerP .headingP h3 span{
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+
+ }
+ .containerP .headingP p{
+  padding-top: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+ .containerP .boxP{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+
+ }
+ .containerP .boxP .dreamP{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+ }
+ 
+ .containerP .boxP .dreamP img{
+  
+  width:100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  
+ }
+
+/*Purchase*/
+
+.containerP2{
+  display:flex;
+  padding-top: 200px;
+  padding-bottom:200px;
+}
+
+@media only screen and(max-width:1200){
+  .containerP2s{
+ display:block;}
+ 
+}
+
+.cardP {
+  flex:32.3%;
+  padding:5px;
+  
+}
+.cardP img{
+  width:80%;
+  border-radius: 5px;
+  height: 300px;
+}
+.cardP button{
+ 
+    display:inline-block;
+    background-color: black;
+    font-size:20px;
+    border:2px solid black;
+    padding: 14px 70px;
+    border-radius :50px;
+    margin-top:20px;
+  
+  }
+  .cardP a {
+    font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: bold;
+      font-weight: 500px;
+      text-decoration: none;
+      align-items: justify;
+      color:white;
+      
+    }
+/*FORM*/
+
+     .form{
+      width: 80%;
+      height: 800px;
+      background-color: white;
+      padding-left: 330px;
+     }
+     input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid grey;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: black;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: gray;
+    }
+    
+
+    /*Footer*/
+footer {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .footer-info {
+    width: 50%;
+    margin: auto 0;
+    font-family: 'montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .footer-i p {
+    font-family: 'montserrat', sans-serif;
+    font-size: 17px;
+  
+  }
+  
+  .footer-info h3 {
+    margin-bottom: 25px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+  }
+  
+  #Copyrights {
+    margin-top: 25px;
+  }
+  
+  @media (max-width: 1223px) {
+    .header nav .menu-btn {
+      display: block;
+      float: right;
+    }
+  
+    .mob-nav {
+      display: block;
+      position: fixed;
+      top: 105px;
+      right: -100%;
+      background: black;
+      height: 45vh;
+      width: 100%;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+  
+    .header .main-nav {
+      display: none;
+    }
+  
+    #click:checked~.menu-btn i:before {
+      content: "\f00d";
+    }
+  
+    .mob-nav li {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    #click:checked~ul {
+      right: 0;
+    }
+  
+  }
+  /*
+   Comments
+
+  -https://www.nationalgeographic.com/animals/reptiles/facts/sea-turtles
+  -https://www.bbcearth.com/news/every-turtle-featured-in-harrowing-planet-earth-ii-segment-was-saved
+  -https://www.youtube.com/
+  -https://www.w3schools.com/
+  -https://www.fisheries.noaa.gov/species/green-turtle
+  -https://www.seacology.org
+  -https://turtle-island.org/
+  -https://themightyroar.com/
+  -https://www.kosgodaseaturtle.org/
+  -https://www.thegreatprojects.com/
+  https://unsplash.com/s/photos/turtle
+
+  */

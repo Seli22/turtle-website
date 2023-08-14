@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+  <meta name="description" content="Turtle Hatcheries in Sri Lanka">
+  <meta name="author" content="Selina">
+  <title> Turtle Hatcheries in Sri Lanka</title>
+  <link rel="stylesheet" href="tickets.css">
+  <link rel="stylesheet" href="stylesheet2.css">
+
+  <link rel="icon" type="image/x-icon" href="tortoise-2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <body>
+
+    <!-- Back Button -->
+    <a class="backButton" href="hikkaduwa.html">
+      < </a>
+
+        <!-- Background Video -->
+        <video class="video" autoplay loop muted plays-inline>
+          <source src="videos2.mp4" type="video/mp4">
+        </video>
+
+        <!-- Heading -->
+        <h3 class="heading">Personal Details</h3>
+
+        <div class="container2">
+
+          <form id="booking-form" action="/payment.html">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="fullName" name="full-name" required oninput='handleInputs("fullName")'>
+
+
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" id="country" onchange='handleInputs("country")'>
+              <option value="">Select Country</option>
+              <option value="us" data-country-code="+1" data-country-name="United States">United States</option>
+              <option value="ca" data-country-code="+1" data-country-name="Canada">Canada</option>
+              <option value="uk" data-country-code="+44" data-country-name="United Kingdom">United Kingdom</option>
+              <option value="sl" data-country-code="+94" data-country-name="Sri Lanka">Sri Lanka</option>
+              <option value="au" data-country-code="+61" data-country-name="Australia">Australia</option>
+              <option value="fr" data-country-code="+33" data-country-name="France">France</option>
+              <option value="de" data-country-code="+49" data-country-name="Germany">Germany</option>
+            </select>
+            <br>
+
+
+            <label for="moblie-number">Mobile Number</label>
+
+            <input type="tel" id="mobileNumber" name="mobile-number" required oninput='handleInputs("mobileNumber")'>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required oninput='handleInputs("email")'>
+
+            <label for="confirm-email">Confirm Email</label>
+            <input type="email" id="confirmEmail" name="confirm-email" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" onchange='handleInputs("gender")'>
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+
+            <button href="/payment.html" id="button">Continue with Purchase</button>
+          </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <br>
+        <br>
+
+        <table id="tbl" class="paymentSummary">
+          <tr>
+            <th>Date</th>
+            <td id="paymentSummary_date">
+            </td>
+          </tr>
+          <tr>
+            <th>Time</th>
+            <td id="paymentSummary_time"></td>
+          </tr>
+          <tr>
+            <th>Duration</th>
+            <td><span id="totalHours">0</span> hrs ( <span id="normalHours">0</span> Normal : <span
+                id="peakHours">0</span>
+              Peak)</td>
+          </tr>
+          <tr>
+            <th>Tickets</th>
+            <th>Charges</th>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_sriLankanAdult">0</span> Sri Lankan Adult</th>
+            <td id="paymentSummary_sriLankanAdult_amount">0</td>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_sriLankanChild">0</span> Sri Lankan Child</th>
+            <td id="paymentSummary_sriLankanChild_amount">0</td>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_foreignAdult">0</span> Foreigner Adult</th>
+            <td id="paymentSummary_foreignAdult_amount">0</td>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_foreignChild">0</span> Foreigner Child</th>
+            <td id="paymentSummary_foreignChild_amount">0</td>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_infant">0</span> Infant</th>
+            <td id="paymentSummary_infant_amount">0</td>
+          </tr>
+          <tfoot>
+            <tr>
+              <th>Total Payable</th>
+              <td id="paymentSummary_infant_totalAmount">0</td>
+            </tr>
+          </tfoot>
+        </table>
+
+
+
+
+
+        <footer>
+          <div class="footer-info">
+            <h4> Turtle Hatcheries in Sri Lanka</h4>
+            <p>
+              Let's get together and save Turtles!
+              Visit the Turtle Hatcheries in Sri Lanka to have an experience
+              of a lifetime.
+            </p>
+          </div>
+          <div id="Copyrights">
+            <p>Copyright &copy; 2023 | Selina Fernando</p>
+          </div>
+
+        </footer>
+
+        <!-- Javascript Imported -->
+        <script src="details.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+  <meta name="description" content="Turtle Hatcheries in Sri Lanka">
+  <meta name="author" content="Selina">
+  <title> Turtle Hatcheries in Sri Lanka</title>
+  <link rel="stylesheet" href="stylesheet2.css">
+  <link rel="icon" type="image/x-icon" href="tortoise-2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="tickets.css">
+
+
+</head>
+
+<body>
+  <a id="back-button" href="details.html">
+    < </a>
+
+
+      <video autoplay loop muted plays-inline>
+        <source src="videos2.mp4" type="video/mp4">
+      </video>
+
+      <h1>PAYMENT DETAILS</h1>
+
+
+      <div class="container2">
+
+
+        <div>
+          <form id="paying-form" action="/confirmation.html">
+            <label for="Card-name">Card Name</label>
+            <input type="text" id="Card-name" name="Card-name" oninput='handleInputs("cardName")'>
+
+            <label for="Card-number">Card Number</label>
+            <input type="text" id="Card-number" name="Card-number" pattern="[0-9]{13,16}"
+              oninput='handleInputs("cardNumber")'>
+
+            <label for="Expiry-date">Expiry date</label>
+            <input type="date" id="Expiry-date" name="Expiry-date" onchange='handleInputs("expiryDate")'>
+
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" name="cvc" pattern="[0-9]{3,4}" oninput='handleInputs("cvc")'>
+
+            <!-- <button type="submit" href="/confirmation.html">Pay</button> -->
+            <button href="/confirmation.html" id="button">Pay</button>
+
+          </form>
+        </div>
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <table id="tbl" class="paymentSummary">
+          <tr>
+            <th>Date</th>
+            <td id="paymentSummary_date">
+            </td>
+          </tr>
+          <tr>
+            <th>Time</th>
+            <td id="paymentSummary_time"></td>
+          </tr>
+          <tr>
+            <th>Duration</th>
+            <td><span id="totalHours">0</span> hrs ( <span id="normalHours">0</span> Normal : <span
+                id="peakHours">0</span>
+              Peak)</td>
+          </tr>
+          <tr>
+            <th>Tickets</th>
+            <th>Charges</th>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_sriLankanAdult">0</span> Sri Lankan Adult</th>
+            <td id="paymentSummary_sriLankanAdult_amount">0</td>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_sriLankanChild">0</span> Sri Lankan Child</th>
+            <td id="paymentSummary_sriLankanChild_amount">0</td>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_foreignAdult">0</span> Foreigner Adult</th>
+            <td id="paymentSummary_foreignAdult_amount">0</td>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_foreignChild">0</span> Foreigner Child</th>
+            <td id="paymentSummary_foreignChild_amount">0</td>
+          </tr>
+          <tr>
+            <th><span id="paymentSummary_infant">0</span> Infant</th>
+            <td id="paymentSummary_infant_amount">0</td>
+          </tr>
+          <tfoot>
+            <tr>
+              <th>Total Payable</th>
+              <td id="paymentSummary_infant_totalAmount">0</td>
+            </tr>
+          </tfoot>
+        </table>
+
+
+
+
+
+
+
+        <footer>
+          <div class="footer-info">
+            <h4> Turtle Hatcheries in Sri Lanka</h4>
+            <p>
+              Let's get together and save Turtles!
+              Visit the Turtle Hatcheries in Sri Lanka to have an experience
+              of a lifetime.
+            </p>
+          </div>
+          <div id="Copyrights">
+            <p>Copyright &copy; 2023 | Selina Fernando</p>
+          </div>
+
+        </footer>
+
+        <!-- Javascript Imported -->
+        <script src="payment.js"></script>
+</body>
+
+</html>
